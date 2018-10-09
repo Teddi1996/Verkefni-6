@@ -35,6 +35,10 @@ h1 {
   margin-bottom: 20px;
 }
 
+.card__img {
+	max-width: 100%;
+}
+
 .image {
   max-width: 100%;
   margin-bottom: 20px;
@@ -55,31 +59,10 @@ h1 {
   padding-left: 10px;
 }
 
-
-/* TODO setja upp grid fyrir >= 1000px */
-
-/* TODO koma mynd fyrir á öðrum stað í < 1000px */
-
-/* grid fyrir cards */
-/*
-.cards {
-}
-*/
-/* TODO útfæra grid fyrir cards */
-
-/*
-  .card kemur óbreytt úr sýnilausn á verkefni 5 fyrir utan responsive stíla og
-  að það fær `height: 100%;`
-  Sýnilausn verður gefin út við lok dags miðvikudaginn 3. okt
-*/
-
-/* TODO .card stílar úr v5 (eða sýnilausn...) */
-
 .cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background: #eee;
 }
 
 .card {
@@ -99,7 +82,6 @@ h1 {
 
 .card__title {
   	margin-bottom: 20px;
-
   	font-size: 1.375em;
   	line-height: 1;
   	word-break: break-word;
@@ -122,13 +104,15 @@ h1 {
   	flex: 0 0 150px;
 }
 
-.card__row {
+.cards__row {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.card__col {
+.cards__col {
 	width: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .card__tags {
